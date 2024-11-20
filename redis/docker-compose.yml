@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: redis:latest
+    restart: always
+    ports:
+      - 6379:6379
+    volumes:
+      - ./volumes/cache:/root/redis:z
+    environment:
+      - REDIS_PORT=6379

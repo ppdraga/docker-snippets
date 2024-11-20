@@ -1,0 +1,10 @@
+
+Testing kafka/zookeeper connections:
+
+$ nc -z localhost 2181
+Connection to localhost port 2181 [tcp/*] succeeded!
+$ nc -z localhost 9092
+Connection to localhost port 9092 [tcp/*] succeeded!
+
+Do not forget edit /etc/hosts:
+127.0.0.1 kafka
